@@ -8,7 +8,7 @@ export default function Layout() {
           <nav>
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <Link to="intellygenz-quiz/">Home</Link>
               </li>
               <li>
                 <Link to="/about">About</Link>

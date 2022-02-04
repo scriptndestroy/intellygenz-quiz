@@ -5,10 +5,9 @@ import "@fontsource/roboto/700.css";
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import { store } from "./app/store";
-import Details from "./features/details/Details";
 import "./index.css";
 import * as serviceWorker from "./serviceWorker";
 
