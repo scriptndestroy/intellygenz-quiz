@@ -1,7 +1,9 @@
-export interface XatakaFeed{
-    author: string;
-    description: string;
-    link: string;    
-    pubDate: string;
-    title: string;
+export interface XatakaFeed {
+  title: string;
+  link: string;
+  guid: string;
+  pubDate: string;
+  author: string;
+  description: string;
+  imgSrc: string;
 }

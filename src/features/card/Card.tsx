@@ -54,13 +54,13 @@ const FeedCard: React.FunctionComponent<FeedCardProps> = (
             <MoreVertIcon />
           </IconButton>
         }
-        title="Shrimp and Chorizo Paella"
-        subheader="September 14, 2016"
+        title={values?.title}
+        subheader={values?.pubDate}
       />
       <CardMedia
         component="img"
         height="194"
-        image="/static/images/cards/paella.jpg"
+        image={values?.imgSrc}
         alt="Paella dish"
       />
       <CardContent>
@@ -88,7 +88,9 @@ const FeedCard: React.FunctionComponent<FeedCardProps> = (
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <Typography paragraph>Method:</Typography>
+            {values?.description}
+            
+          {/* <Typography paragraph>Method:</Typography>
           <Typography paragraph>
             Heat 1/2 cup of the broth in a pot until simmering, add saffron and
             set aside for 10 minutes.
@@ -114,7 +116,7 @@ const FeedCard: React.FunctionComponent<FeedCardProps> = (
           <Typography>
             Set aside off of the heat to let rest for 10 minutes, and then
             serve.
-          </Typography>
+          </Typography> */}
         </CardContent>
       </Collapse>
     </Card>
