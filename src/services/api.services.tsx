@@ -1,6 +1,6 @@
 // import { store } from '../store/store';
 // import { UIActions } from '../store/ui/ui.action';
-import axios, { AxiosResponse } from "axios";
+import axios from "axios";
 import config from "../config";
 
 export default class ApiServices<T> {
@@ -49,7 +49,9 @@ export default class ApiServices<T> {
     return axios
       .get<T[]>(this.URL, {
         headers: {
-          "Access-Control-Allow-Origin": "*",          
+                
+          
+          "Access-Control-Allow-Origin": "*",   
         },
       })
       .then((result) => {          
